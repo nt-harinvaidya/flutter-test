@@ -36,7 +36,11 @@ User can click on Next button to get the new pair of words.
 Please wrtie integration tests in integration_test/integration_test.dart file.
 The file has test scenarios listed.
 
-Bonus:
-Write a few widget tests under test/widget_test.dart file
+**Bonus**
+Write a few widget tests under test/widget_test.dart file.
 
+**Hint**
+Inspect the widgets with Flutter Inspector to find the key for testing.
+
+**Resource**
 Flutter development and testing resource: [online documentation](https://docs.flutter.dev/)
