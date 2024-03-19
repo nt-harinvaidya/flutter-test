@@ -1,0 +1,35 @@
+name: flutter_test_app
+description: "Flutter Application For Testing"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0-0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+  english_words: ^4.0.0
+  provider: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  plugin:
+    platforms:
+      android:
+        package: dev.flutter.plugins.integration_test
+        pluginClass: IntegrationTestPlugin
+      ios:
+        pluginClass: IntegrationTestPlugin
