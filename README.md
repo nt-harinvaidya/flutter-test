@@ -6,41 +6,50 @@ Please follow the instructions in this readme guide for your assignment.
 
 #### Step 1: Project Setup
 
-**A.** Feel free to use IDE of your choice.
+Feel free to use IDE of your choice.
+
 You are only required to complete this assignment with tests working with either Android or iOS platforms.
+
 **In-Scope:** mobile apps testing
 **Out-of-scope:** Web or Desktop application
 
-Notify your interviewer with the platform of your choice (iOS-simulator or Android-emulator) via below branching strategy.
+Notify your interviewer with the platform of your choice (iOS-simulator or Android-emulator) as a comment in the test files (integration_test.dart and/or widget_test.dart).
 
-**B.** Create a sidebranch from main branch following convention:
-`<first_name>-<last_name>-<platform>`
+You are not required to create a branch but provide us with your test files - either one or both: integration_test.dart, widget_test.dart.
 
-Platform values can be: `android`, `ios` or `both`
-
-`Example: First name is Luke, last name is Skywalker. Platform of choice: both. Branch name: luke-skywalker-both`
+You should be able to upload them to Greenhouse.
+Please contact HR if you have any trouble attaching dart files.
 
 #### Step 2: Application walkthrough
 
 Build and launch the flutter application from your choice of IDE.
+`flutter clean; flutter run`
+
 On the home page of app you will see two options in bottom navigation bar: Home and Favorites.
-On First lauch, home screen is default with Home icon enable and and Favorites icon is grayed out. Selecting Favorties icon takes to Favorites screen.
+
+On the first lauch, home screen opens as default with Home icon enabled and Favorites icon grayed out in bottom navigation pane. Selecting Favorties icon takes to Favorites screen.
 
 User can click on Next button to get the new pair of words.
+
+User can click on Like button to add the word-pair as favorite and these can be visible in Favorites screen.
+
+User can delete the items from the Favorites screen.
 
 **Sample home page image:**
 ![alt text](image.png)
 
 #### Step 3: Write integration tests
 
-Please wrtie integration tests in integration_test/integration_test.dart file.
+Please write integration tests in integration_test/integration_test.dart file.
 The file has test scenarios listed.
 
 **Bonus**
 Write a few widget tests under test/widget_test.dart file.
 
+These are the two files (integration_test.dart is mandatory) you need to attach to Greenhouse.
+
 **Hint**
-Inspect the widgets with Flutter Inspector to find the key for testing.
+Inspect the widgets with Flutter Inspector to find the key attribute for widget lookup.
 
 **Resource**
 Flutter development and testing resource: [online documentation](https://docs.flutter.dev/)
